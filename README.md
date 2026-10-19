@@ -35,7 +35,7 @@ Zorin Connect gör synken mellan mobil och dator själv. `/push` och `/pull` är
 ## Krav
 
 - Wayland med `wl-paste`, eller X11 med `xclip` eller `xsel`.
-- Ljud: `canberra-gtk-play`. Saknas ljudtemat "message" spelas ett eget pling.
+- Ljud: `canberra-gtk-play`. Plinget är det egna, samma som Jarri använde. Det spelas aldrig från systemets ljudtema.
 - För Zorin: Zorin Connect igång på datorn. Utan den svarar `/status` med `"available": false`, och övriga funktioner fungerar ändå.
 
 ## Inställningar

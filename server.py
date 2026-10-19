@@ -178,12 +178,10 @@ def pling_wav():
 
 
 def play_sound():
-    """Plays the system pling if the sound theme has one, else the synthesized pling."""
+    """Plays the same pling as the Jarri shell used to. Always this one, never the system sound theme."""
     if not shutil.which("canberra-gtk-play"):
         return
-    result = subprocess.run(["canberra-gtk-play", "-i", "message"], capture_output=True, timeout=10)
-    if result.returncode != 0:
-        subprocess.run(["canberra-gtk-play", "-f", pling_wav()], capture_output=True, timeout=10)
+    subprocess.run(["canberra-gtk-play", "-f", pling_wav()], capture_output=True, timeout=10)
 
 
 class Pling:
